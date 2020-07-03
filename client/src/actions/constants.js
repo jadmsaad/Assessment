@@ -1,0 +1,11 @@
+export const ADD_ALERT = 'ADD_ALERT';
+export const REMOVE_ALERT = 'REMOVE_ALERT';
+export const REGISTER_SUCCESS ='REGISTER_SUCCESS';
+export const REGISTER_FAIL ='REGISTER_FAIL';
+export const USER_LOADED ='USER_LOADED';
+export const LOGIN_SUCCESS ='LOGIN_SUCESS';
+export const LOGIN_FAIL ='LOGIN_FAIL';
+export const LOGOUT ='LOGOUT';
+export const LOAD_FAIL ='LOAD_FAIL'
+export const CLEAR_ALERTS = 'CLEAR_ALERTS';
+export const UPDATE_SUCCESS ='UPDATE_SUCCESS'
