@@ -40,7 +40,7 @@ const handleSubmit = e => {
   }
 
   if(isAuthenticated){
-    return <Redirect to="/"/>
+    return <Redirect to="/dashboard"/>
 }
 
     return (

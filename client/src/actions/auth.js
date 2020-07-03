@@ -116,6 +116,7 @@ export const update = ({first_name,last_name,username,email,password}) => async 
             payload: res.data
         })
         dispatch(loadUser());
+        dispatch(addAlert("User updated","success"));
 
     }
     catch(resErrors){

@@ -23,9 +23,7 @@ const handleClose = () =>{
             <>
     
             <Modal show={alerts.length>0} onHide={handleClose}>
-              <Modal.Header closeButton>
-                <Modal.Title>Oops!</Modal.Title>
-              </Modal.Header>
+
               <Modal.Body>
                     {alerts.map(alert => (
                     <Alert key={alert.id} variant={alert.alertVariant}>{alert.message}</Alert>

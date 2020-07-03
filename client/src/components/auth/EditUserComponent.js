@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 import {Form, Button, Col,  Jumbotron} from 'react-bootstrap'
-import {addAlert} from '../../actions/alert'
+import { Redirect } from "react-router-dom";
 import {update, loadUser} from '../../actions/auth'
 import {connect} from 'react-redux'
 
@@ -38,6 +38,7 @@ const handleChange = e => setFormData({
 const handleSubmit = e => {
       e.preventDefault();          
         update(formData)   
+    
       
   }
 
