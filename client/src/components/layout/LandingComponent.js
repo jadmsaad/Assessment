@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Link, Redirect } from "react-router-dom";
+import {Container, Button} from 'react-bootstrap'
 
 const LandingComponent = () => {
 
@@ -11,18 +12,18 @@ const LandingComponent = () => {
       <div className="dark-overlay">
         <div className="landing-inner">
           
-          <h1 className="x-large">Providing marketing insights for your business</h1>
-          <p className="lead">
+          <h1 >Providing marketing insights for your business</h1>
+          <h4 >
             Create a business analytics dashboard
-          </p>
-          <div className="buttons">
-            <Link to="/register" className="btn btn-primary">
+          </h4>
+          <Container >
+            <Button as={Link} to="/register" variant="primary" className="m-1" >
               Register
-            </Link>
-            <Link to="/login" className="btn btn-primary">
+            </Button>
+            <Button as={Link} to="/login" variant="secondary" className="m-1">
               Login
-            </Link>
-          </div>
+            </Button>
+          </Container>
         </div>
       </div>
     </section>

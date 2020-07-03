@@ -4,7 +4,7 @@ import {Form, Button, Col, Jumbotron} from 'react-bootstrap'
 
 const ContactComponent = (props) => {
     return (
-        <Jumbotron>
+        <Jumbotron className="m-5">
         <h1>Tell us about it</h1>
         <Form >
 
@@ -50,7 +50,7 @@ const ContactComponent = (props) => {
          </Form.Group>
         </Form.Row>
 
-        <Button variant="primary" type="submit" >
+        <Button variant="primary" >
             Send
         </Button>
         </Form>

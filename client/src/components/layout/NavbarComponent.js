@@ -18,12 +18,13 @@ const NavbarComponent = ({isAuthenticated, loading,logout}) => {
           
   </Nav>
   <Nav>
-      <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
+      
       <NavDropdown title="User" id="basic-nav-dropdown" variant="dark">
         <NavDropdown.Item as={Link} to="edituser" variant="dark">Edit user info</NavDropdown.Item>        
         <NavDropdown.Divider />
         <NavDropdown.Item  onClick={ () => handleLogout()}>Logout</NavDropdown.Item>
       </NavDropdown>
+      <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
     </Nav>
   </React.Fragment>
   );

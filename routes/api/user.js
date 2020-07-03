@@ -33,12 +33,13 @@ try{
     let user = await User.findOne({username: req.body.username});
 
     if(!user){
-        return res.status(404).json({errors: [{message: "user doesn't exist please register"}]});
+      
+        return res.status(404).json({errors: [{msg: "user doesn't exist please register"}]});
     }
 
     const isMatch = await bcrypt.compare(req.body.password,user.password);
     if(!isMatch){
-        return res.status(400).json({errors: [{message: "Invalid Password"}]});
+        return res.status(400).json({errors: [{msg: "Invalid Password"}]});
     }
 
     const payload ={
@@ -58,7 +59,7 @@ try{
       );
     }
     catch(err){
-        return res.status(400).json({errors: [{message: ""+err }]})
+        return res.status(400).json({errors: [{msg: ""+err }]})
     }
 
 
@@ -96,7 +97,7 @@ router.post("/create",
         let user = await User.findOne({username: req.body.username});
 
         if(user) {
-            return res.status(400).json({errors: [{message: "user already exists"}]});
+            return res.status(400).json({errors: [{msg: "user already exists"}]});
         }
         else {
             

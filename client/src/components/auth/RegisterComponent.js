@@ -45,7 +45,7 @@ const handleSubmit = e => {
 
     return (
     
-    <Jumbotron>
+    <Jumbotron className="m-5">
         <h1>Create User Account</h1>
         <Form onSubmit= {e=> handleSubmit(e)}>
 

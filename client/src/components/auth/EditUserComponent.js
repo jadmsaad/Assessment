@@ -45,8 +45,8 @@ const handleSubmit = e => {
 
     return (
     
-    <Jumbotron>
-        <h1>Create User Account</h1>
+    <Jumbotron className="m-5">
+        <h1>Edit User Info</h1>
         <Form onSubmit= {e=> handleSubmit(e)}>
 
         <Form.Row>
@@ -111,7 +111,7 @@ const handleSubmit = e => {
 
 
         <Button variant="primary" type="submit">
-            Submit
+            Edit
         </Button>
         </Form>
     </Jumbotron>

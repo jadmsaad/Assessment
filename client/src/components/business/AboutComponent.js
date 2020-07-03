@@ -12,7 +12,7 @@ const AboutComponent = (props) => {
 
 
     return (
-        <Fragment>
+        <div className="m-5">
             <h2 className="d-flex justify-content-center">What do we do?</h2>
             <Row>
             <Container as={Col}>
@@ -67,7 +67,7 @@ const AboutComponent = (props) => {
                 </Carousel>
                 </Container>
             </Row>
-        </Fragment>
+        </div>
     )
 }
 
