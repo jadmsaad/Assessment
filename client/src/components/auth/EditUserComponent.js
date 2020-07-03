@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 import {Form, Button, Col,  Jumbotron} from 'react-bootstrap'
-import { Redirect } from "react-router-dom";
+
 import {update, loadUser} from '../../actions/auth'
 import {connect} from 'react-redux'
 
