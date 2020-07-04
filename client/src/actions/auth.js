@@ -12,7 +12,7 @@ export const loadUser = () => async dispatch =>{
     }
 
     try{
-        const res = await axios.get("http://localhost:5000/api/user/current")
+        const res = await axios.get("api/user/current/")
         dispatch({
             type: USER_LOADED,
             payload: res.data
@@ -38,7 +38,7 @@ export const login = ({username,password}) => async dispatch => {
     const body = JSON.stringify({username,password});
     try {
 
-        const res = await axios.post("http://localhost:5000/api/user/login",body,config);
+        const res = await axios.post("api/user/login/",body,config);
         dispatch({
             type: LOGIN_SUCCESS,
             payload: res.data
@@ -75,7 +75,7 @@ export const register = ({first_name,last_name,username,email,password}) => asyn
     const body = JSON.stringify({first_name,last_name,username,email,password});
 
     try{
-        const res = await axios.post("http://localhost:5000/api/user/create",body,config);
+        const res = await axios.post("api/user/create/",body,config);
         dispatch({
             type: REGISTER_SUCCESS,
             payload: res.data
@@ -110,7 +110,7 @@ export const update = ({first_name,last_name,username,email,password}) => async 
     const body = JSON.stringify({first_name,last_name,username,email,password});
 
     try{
-        const res = await axios.post("http://localhost:5000/api/user/update",body,config);
+        const res = await axios.post("api/user/update/",body,config);
         dispatch({
             type: UPDATE_SUCCESS,
             payload: res.data
