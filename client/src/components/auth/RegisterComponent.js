@@ -120,33 +120,11 @@ const handleSubmit = e => {
 
 
 
-        <Form.Group controlId="formGridAddress1">
-            <Form.Label>Address</Form.Label>
-            <Form.Control placeholder="1234 Main St" />
-        </Form.Group>
 
 
 
 
-        {/* <Form.Row>
-            <Form.Group as={Col} controlId="formGridCity">
-            <Form.Label>City</Form.Label>
-            <Form.Control />
-            </Form.Group>
-
-            <Form.Group as={Col} controlId="formGridState">
-            <Form.Label>State</Form.Label>
-            <Form.Control as="select" defaultValue="Choose...">
-                <option>Choose...</option>
-                <option>...</option>
-            </Form.Control>
-            </Form.Group>
-
-            <Form.Group as={Col} controlId="formGridZip">
-            <Form.Label>Zip</Form.Label>
-            <Form.Control />
-            </Form.Group>
-        </Form.Row> */}
+        
 
 
         <Button variant="primary" type="submit">

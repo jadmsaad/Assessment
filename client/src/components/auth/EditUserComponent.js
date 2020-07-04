@@ -99,11 +99,6 @@ const handleSubmit = e => {
         </Form.Row>
 
 
-{/* 
-        <Form.Group controlId="formGridAddress1">
-            <Form.Label>Address</Form.Label>
-            <Form.Control placeholder="1234 Main St" />
-        </Form.Group> */}
 
 
 
