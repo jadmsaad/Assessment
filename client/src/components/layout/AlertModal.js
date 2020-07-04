@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React  from 'react'
 import PropTypes from 'prop-types'
 import { connect } from "react-redux";
 import {Alert, Modal,Button} from 'react-bootstrap';
@@ -6,11 +6,11 @@ import {clearAlerts} from '../../actions/alert'
 const AlertComponent = ({alerts,clearAlerts}) => {
 
 
-const [show, setShow] = useState(alerts.length>0? true: false);
+// const [show, setShow] = useState(alerts.length>0? true: false);
 
 const handleClose = () =>{
     clearAlerts();
-    setShow(false);
+    // setShow(false);
 } 
 // const handleShow = () => setShow(true);
 

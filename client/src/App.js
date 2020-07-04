@@ -3,7 +3,7 @@ import NavbarComponent from './components/layout/NavbarComponent'
 import LandingComponent from './components/layout/LandingComponent'
 import RegisterComponent from './components/auth/RegisterComponent'
 import LoginComponent from './components/auth/LoginComponent'
-import AlertComponent from './components/layout/AlertComponent'
+// import AlertComponent from './components/layout/AlertComponent'
 import AlertModal from './components/layout/AlertModal'
 import AboutComponent from './components/business/AboutComponent'
 import ContactComponent from './components/business/ContactComponent'
@@ -15,7 +15,6 @@ import {Container} from 'react-bootstrap';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {loadUser} from './actions/auth'
 import store from './store'
-import setAuthToken from './utils/setAuthToken'
 //Redux
 
 import {Provider} from 'react-redux';

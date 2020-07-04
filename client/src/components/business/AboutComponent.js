@@ -1,8 +1,7 @@
-import React,{Fragment, useState} from 'react'
-import PropTypes from 'prop-types'
+import React,{useState} from 'react'
 import {Container, Carousel, Row, Col} from 'react-bootstrap'
 
-const AboutComponent = (props) => {
+const AboutComponent = () => {
 
     const [index, setIndex] = useState(0);
 

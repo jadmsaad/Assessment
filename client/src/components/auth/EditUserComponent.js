@@ -18,8 +18,8 @@ const [formData, setFormData] = useState ({
 })
 
 
-useEffect(() => {
-    loadUser();
+useEffect( ({user}) => {
+     loadUser();
     setFormData({
         first_name: loading || !user.first_name ? "" : user.first_name,
         last_name: loading || !user.last_name ? "" : user.last_name,

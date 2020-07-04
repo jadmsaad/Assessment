@@ -1,4 +1,4 @@
-import {ADD_ALERT, REMOVE_ALERT, CLEAR_ALERTS} from './constants';
+import {ADD_ALERT,  CLEAR_ALERTS} from './constants';
 import {v4 as uuidv4} from "uuid";
 
 

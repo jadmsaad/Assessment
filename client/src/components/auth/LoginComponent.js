@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
-import {Form, Button, Col, Jumbotron , Container} from 'react-bootstrap'
+import {Form, Button, Col, Jumbotron } from 'react-bootstrap'
 import {login} from '../../actions/auth'
 import {connect} from 'react-redux'
 import { Redirect } from "react-router-dom";
