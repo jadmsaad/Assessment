@@ -10,7 +10,8 @@ import ContactComponent from './components/business/ContactComponent'
 import './App.css';
 import PrivateRouteComponent from './components/routing/PrivateRouteComponent'
 import EditUserComponent from './components/auth/EditUserComponent'
-import Dashboard from './components/dashboard/dashboard'
+import DashboardComponent from './components/dashboard/DashboarComponent'
+import NotFoundComponent from './components/layout/NotFoundComponent'
 import {Container} from 'react-bootstrap';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {loadUser} from './actions/auth'
@@ -35,25 +36,28 @@ return (
     <Router>
       <Fragment>
         <NavbarComponent/>
-        <Route exact path='/' component={LandingComponent}/>
-        <Container>
+        
+        
         <AlertModal/>
-          <Switch>
-            
-            
-            
+          
             <Switch>
-            <Route exact path ='/register' component ={RegisterComponent}/>
-            <Route exact path ='/login' component ={LoginComponent}/>
-            <Route exact path ='/about' component ={AboutComponent}/>
-            <Route exact path ='/contact' component ={ContactComponent}/>
-            <PrivateRouteComponent exact path="/dashboard" component={Dashboard} />
-            <PrivateRouteComponent exact path="/edituser" component={EditUserComponent} />
+              <Route exact path='/' component={LandingComponent}/>
+              <Container>
+              <Switch>
+              
+              <Route exact path ='/register' component ={RegisterComponent}/>
+              <Route exact path ='/login' component ={LoginComponent}/>
+              <Route exact path ='/about' component ={AboutComponent}/>
+              <Route exact path ='/contact' component ={ContactComponent}/>
+              <PrivateRouteComponent exact path="/dashboard" component={DashboardComponent} />
+              <PrivateRouteComponent exact path="/edituser" component={EditUserComponent} />
+              <Route component={NotFoundComponent} />
+              </Switch>
+              </Container>
             </Switch>
            
-          </Switch>
-          </Container>
-       
+          
+         
       </Fragment>
     </Router>
 </Provider>
