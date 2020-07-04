@@ -48,7 +48,7 @@ const NavbarComponent = ({isAuthenticated, loading,logout}) => {
 
     return (
       <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand as={Link} to="/about">SmartStats</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">SmartStats</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
       {!loading && (
